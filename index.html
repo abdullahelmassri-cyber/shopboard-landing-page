@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Shop considered everyday goods for a more thoughtful home."
+    />
+    <meta name="theme-color" content="#f5f7f4" />
+    <link rel="icon" type="image/svg+xml" href="/shopboard.svg" />
+    <title>ShopBoard — Thoughtful goods for everyday</title>
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="site-header__inner">
+        <a class="brand" href="#top" aria-label="ShopBoard home">ShopBoard</a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="#products">Shop</a></li>
+            <li><a href="#register">Register</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero__copy">
+          <p class="eyebrow">Good things, chosen well</p>
+          <h1 id="hero-title">ShopBoard</h1>
+          <p class="hero__tagline">
+            Thoughtful everyday goods to make your home feel a little more like
+            you.
+          </p>
+          <a class="button button--primary" href="#products">Explore the shop</a>
+        </div>
+        <img
+          class="hero__image"
+          data-art="hero"
+          alt="A curated collection of home goods arranged on a shelf"
+          width="800"
+          height="520"
+        />
+      </section>
+
+      <section class="products section-shell" id="products" aria-labelledby="products-title">
+        <div class="section-heading">
+          <p class="eyebrow">Made for everyday</p>
+          <h2 id="products-title">A few good finds</h2>
+          <p>Useful, well-made pieces that feel right at home.</p>
+        </div>
+        <ul class="product-grid">
+          <li>
+            <article class="product-card">
+              <img data-art="mug" alt="Speckled cream ceramic mug with a rounded handle" width="800" height="520" loading="lazy" />
+              <div class="product-card__details">
+                <h3>Everyday Stoneware Mug</h3>
+                <div class="product-card__bottom">
+                  <p class="price">$24</p>
+                  <button class="button button--secondary" type="button">Add to cart</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="product-card">
+              <img data-art="tote" alt="Natural canvas tote bag with sturdy dark green handles" width="800" height="520" loading="lazy" />
+              <div class="product-card__details">
+                <h3>Market Day Canvas Tote</h3>
+                <div class="product-card__bottom">
+                  <p class="price">$32</p>
+                  <button class="button button--secondary" type="button">Add to cart</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="product-card">
+              <img data-art="lamp" alt="Sculptural sage green table lamp with a warm shade" width="800" height="520" loading="lazy" />
+              <div class="product-card__details">
+                <h3>Soft Glow Table Lamp</h3>
+                <div class="product-card__bottom">
+                  <p class="price">$68</p>
+                  <button class="button button--secondary" type="button">Add to cart</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="product-card">
+              <img data-art="planter" alt="Terracotta planter with a leafy green houseplant" width="800" height="520" loading="lazy" />
+              <div class="product-card__details">
+                <h3>Little Green Planter</h3>
+                <div class="product-card__bottom">
+                  <p class="price">$29</p>
+                  <button class="button button--secondary" type="button">Add to cart</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="product-card">
+              <img data-art="throw" alt="Folded moss green woven throw blanket with fringe" width="800" height="520" loading="lazy" />
+              <div class="product-card__details">
+                <h3>Weekend Woven Throw</h3>
+                <div class="product-card__bottom">
+                  <p class="price">$84</p>
+                  <button class="button button--secondary" type="button">Add to cart</button>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <article class="product-card">
+              <img data-art="notebook" alt="Two simple paper notebooks in warm neutral colors" width="800" height="520" loading="lazy" />
+              <div class="product-card__details">
+                <h3>Notes for Later Set</h3>
+                <div class="product-card__bottom">
+                  <p class="price">$18</p>
+                  <button class="button button--secondary" type="button">Add to cart</button>
+                </div>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <section class="register" id="register" aria-labelledby="register-title">
+        <div class="register__inner section-shell">
+          <div class="section-heading">
+            <p class="eyebrow">A good place to start</p>
+            <h2 id="register-title">Make yourself at home</h2>
+            <p>Create an account to keep your favorite finds close.</p>
+          </div>
+          <form class="register-form" action="/register" method="post">
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+              />
+            </div>
+            <div class="form-field">
+              <label for="pw">Password</label>
+              <input
+                id="pw"
+                name="password"
+                type="password"
+                minlength="8"
+                autocomplete="new-password"
+                required
+              />
+            </div>
+            <button class="button button--primary" type="submit">Create account</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__inner section-shell">
+        <p>Questions? <a href="mailto:hello@shopboard.example">hello@shopboard.example</a></p>
+        <p>&copy; 2026 ShopBoard</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
